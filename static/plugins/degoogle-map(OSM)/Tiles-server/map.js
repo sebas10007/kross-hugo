@@ -1,4 +1,4 @@
-window.marker = null;
+/* window.marker = null;
 
 function initialize() {
   var map;
@@ -201,3 +201,6 @@ var map = document.getElementById('map');
 if (map != null) {
   google.maps.event.addDomListener(window, 'load', initialize)
 }
+*/
+
+// Falta implementar nuevo mapa, preferiblemente de https://openmaptiles.org/

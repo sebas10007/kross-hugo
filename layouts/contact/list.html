@@ -2,19 +2,15 @@
 
 {{ partial "page-title.html" . }}
 
-{{ if site.Params.map.enable }}
 <section class="section pb-0">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Find me on Google Map</h2>
+        <h2 class="section-title">Encuéntranos en Tiles Map</h2>
       </div>
       <div class="col-12">
-        {{ with site.Params.map }}
-        {{"<!-- Google Map -->" | safeHTML}}
-        <div class="shadow" id="map" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"
-          data-marker="{{ .map_marker | absURL }}" data-marker-name="{{ site.Title }}" style="height: 400px;"></div>
-        {{ end }}
+        <iframe src="http://localhost:3650/plugins/degoogle-map(OSM)/Tiles-server/README.md" width=500 height=300 />
+        <div class="shadow" id="map"style="height: 400px;"></div>
       </div>
     </div>
   </div>
@@ -25,7 +21,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Follow me on Social</h2>
+        <h2 class="section-title">Síguenos en nuestras redes sociales</h2>
       </div>
       <div class="col-12">
         <ul class="list-inline social-icons text-center">
